@@ -1,0 +1,93 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<div class="container text-center mt-2">
+  <h3><u>New Arrival</u></h3>
+
+</div>
+
+
+
+<div class="container mt-3 ">
+   
+  <div class="row p-3">
+    {%for n in new%}
+      
+        <div class="col-lg-3 mt-5">
+          
+            <div class="card shadow" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/M/MV5BOGViNTg4YTktYTQ2Ni00MTU0LTk2NWUtMTI4OTc1YTM0NzQ2XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" class="card-img-top" alt="..." width="200" height="200">
+                <div class="card-body">
+                  <h5 class="card-title">{{n.title}}</h5>
+                  
+                  <h6 class="card-text">Director : {{n.director}}</h6>
+                 
+                  <!---<h6 class="card-text">Cast : {{n.casting}}</h6> !-->
+                  <a href="#" class="btn btn-primary">More...</a>
+                </div>
+              </div>
+              
+        </div>
+      
+        {%endfor%}
+        
+    </div>
+       
+</div>
+
+
+
+<div class="container mt-3">
+  <div class="row p-3">
+      <div class="col-lg-6">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+          <button type="button" class="btn btn-success mt-3">Submit</button>
+        </form>
+      </div>
+
+      <div class="col-lg-6">
+
+        <figure class="note note-success p-4 shadow-sm">
+          <blockquote class="blockquote">
+            <p class="pb-2">
+              
+              “Once you overcome the one-inch-tall barrier of subtitles,you will be introduced to so many more amazing films."
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0">
+            Bong Joon Ho
+          </figcaption>
+        </figure>
+      </div>
+
+      
+  </div>
+</div>
+      
+        
+        
+      
+       
+
+
+    
+        
+    
+    
+ 
+    
+    
+  
+  
+
+
+
+
+
+
+{%endblock%}
